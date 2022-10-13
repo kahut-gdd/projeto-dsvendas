@@ -19,14 +19,11 @@ const Dashboard = () => {
               <div className="col-sm-6">
                 <h5 className="text-center text-secondary">Todas as Vendas</h5>
                   <DonutChart />
-              </div>
-  
+              </div>  
             </div>
             <div className="py-3">
-              <h2 className="text-primary">Venda Total</h2>
-  
-            </div>
-  
+              <h2 className="text-primary">Venda Total</h2>  
+            </div>  
             <DataTable />
           </div>
           <Footer />

@@ -23,18 +23,18 @@ public class SaleController {
 	private SaleService service;
 	
 	@GetMapping
-	public ResponseEntity<Page<SaleDTO>> findAll(Pageable pageable){
+	public ResponseEntity<Page<SaleDTO>> findAll(Pageable pageable) {
 		Page<SaleDTO> list = service.findAll(pageable);
 		return ResponseEntity.ok(list);
 	}
 	
-	@GetMapping(value = "/sucess-by-seller")
+	@GetMapping(value = "/amount-by-seller")
 	public ResponseEntity<List<SaleSumDTO>> amountGroupedBySeller() {
 		List<SaleSumDTO> list = service.amountGroupedBySeller();
 		return ResponseEntity.ok(list);
 	}
 	
-	@GetMapping(value = "/amount-by-seller")
+	@GetMapping(value = "/sucess-by-seller")
 	public ResponseEntity<List<SaleSucessDTO>> sucessGroupedBySeller() {
 		List<SaleSucessDTO> list = service.sucessGroupedBySeller();
 		return ResponseEntity.ok(list);

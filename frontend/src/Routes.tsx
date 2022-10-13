@@ -1,5 +1,3 @@
-
-
 import Dashboard from "pages/Dashboard";
 import Home from "pages/Home";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
@@ -10,8 +8,7 @@ const Routes = () => {
         <Switch>
             <Route path="/" exact>
                 <Home />        
-            </Route>
-            
+            </Route>            
             <Route path="/dashboard" exact>
                 <Dashboard />        
             </Route>
